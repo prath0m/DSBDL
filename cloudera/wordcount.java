@@ -71,3 +71,8 @@ public class WordCount {
     System.exit(job.waitForCompletion(true) ? 0 : 1);
   }
 }
+
+
+// hadoop fs -put Desktop/wordcount.txt wordcount.txt
+// hadoop jar WordCount.jar WordCount.wordcount wordcount.txt wordcount_output
+// hadoop fs -cat wordcount_output/part-r-00000
